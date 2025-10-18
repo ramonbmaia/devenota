@@ -74,7 +74,15 @@
         // --- Configuração e Variáveis Globais ---
         // Estas variáveis são injetadas pelo ambiente. Não as altere.
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'devenota-app-dev';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const firebaseConfig = {
+        apiKey: "AIzaSyASki-GkqCON0Iz9tCyw0FI_3gQWSte0Mo",
+        authDomain: "devenota.firebaseapp.com",
+        projectId: "devenota",
+        storageBucket: "devenota.firebasestorage.app",
+        messagingSenderId: "70545591629",
+        appId: "1:70545591629:web:98f9bb98124183e90cbb04",
+        measurementId: "G-VPD0JXJE86"
+        };
         const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : undefined;
 
         // Cores e categorias para as despesas
